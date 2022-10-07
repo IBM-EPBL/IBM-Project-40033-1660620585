@@ -19,15 +19,16 @@ while True:
        time.sleep(0.5)
 
 #Traffic Light
-       GPIO.output(38,True)
+       
+       GPIO.output(38,True)      # Red LED
        time.sleep(2)
        GPIO.output(38,False)
        time.sleep(1)
-       GPIO.output(36,True)
+       GPIO.output(36,True)     # Yellow LED
        time.sleep(1)
        GPIO.output(36,False)
        time.sleep(1)
-       GPIO.output(32,True)
+       GPIO.output(32,True)    # Green LED
        time.sleep(2)
        GPIO.output(32,False)
        time.sleep(1)
